@@ -6,7 +6,7 @@
  * Time: 10:36.
  */
 
-namespace App\Element;
+namespace Bornfight\PDependParser\Element;
 
 class MethodElement
 {

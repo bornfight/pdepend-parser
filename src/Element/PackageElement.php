@@ -6,7 +6,7 @@
  * Time: 10:34.
  */
 
-namespace App\Element;
+namespace Bornfight\PDependParser\Element;
 
 use InvalidArgumentException;
 

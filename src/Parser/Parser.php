@@ -6,7 +6,7 @@
  * Time: 09:13.
  */
 
-namespace App\Parser;
+namespace Bornfight\PDependParser\Parser;
 
 use App\Element\ClassElement;
 use App\Element\MethodElement;
