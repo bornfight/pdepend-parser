@@ -14,7 +14,7 @@ use App\Element\PackageElement;
 use InvalidArgumentException;
 use SimpleXMLElement;
 
-class XMLParser
+class Parser
 {
     private $file;
 
