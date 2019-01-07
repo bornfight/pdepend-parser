@@ -23,7 +23,7 @@ class Parser
         if (file_exists($path)) {
             $this->file = file_get_contents($path);
         } else {
-            throw new InvalidArgumentException('Invalid file path');
+            throw new InvalidArgumentException($path . 'is not valid file path');
         }
     }
 
