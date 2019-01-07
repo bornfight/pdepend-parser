@@ -1,5 +1,5 @@
 {
-    "name": "degordian/pdepend-parser",
+    "name": "bornfight/pdepend-parser",
     "description": "Parser for PDepend XML reports.",
     "type": "library",
     "authors": [
