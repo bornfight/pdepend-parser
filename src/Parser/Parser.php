@@ -8,9 +8,9 @@
 
 namespace Bornfight\PDependParser\Parser;
 
-use App\Element\ClassElement;
-use App\Element\MethodElement;
-use App\Element\PackageElement;
+use Bornfight\PDependParser\Element\ClassElement;
+use Bornfight\PDependParser\Element\MethodElement;
+use Bornfight\PDependParser\Element\PackageElement;
 use InvalidArgumentException;
 use SimpleXMLElement;
 

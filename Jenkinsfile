@@ -26,7 +26,7 @@ pipeline {
                     )
                     checkstyle canComputeNew: false, defaultEncoding: '', healthy: '0', pattern: 'reports/*-checkstyle.xml', unHealthy: '20', unstableTotalHigh: '0', unstableTotalNormal: '5'
                     pmd canComputeNew: false, defaultEncoding: '', healthy: '', pattern: 'reports/phpmd.xml', unHealthy: ''
-                    dry canComputeNew: false, canRunOnFailed: true, defaultEncoding: '', healthy: '', pattern: 'reports/phpcpd.xml', unHealthy: '', unstableTotalHigh: '0'
+                    dry canComputeNew: false, canRunOnFailed: true, defaultEncoding: '', healthy: '', pattern: 'reports/phpcpd.xml', unHealthy: '', unstableTotalHigh: '2'
                 }
             }
         }
