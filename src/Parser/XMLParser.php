@@ -20,8 +20,8 @@ class XMLParser
 
     public function __construct(string $path)
     {
-        if (file_exists(__DIR__.'/../../'.$path)) {
-            $this->file = file_get_contents(__DIR__.'/../../'.$path);
+        if (file_exists($path)) {
+            $this->file = file_get_contents($path);
         } else {
             throw new InvalidArgumentException('Invalid file path');
         }
