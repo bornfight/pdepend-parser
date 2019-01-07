@@ -20,12 +20,12 @@
         ]
     },
     "require-dev": {
-        "phpmd/phpmd": "*.*.*",
-        "phpstan/phpstan": "*.*.*",
-        "friendsofphp/php-cs-fixer": "*.*.*",
-        "phpmetrics/phpmetrics": "*.*.*",
-        "sebastian/phpcpd": "*.*.*",
-        "codeception/codeception": "*.*.*"
+        "phpmd/phpmd": "*",
+        "phpstan/phpstan": "*",
+        "friendsofphp/php-cs-fixer": "*",
+        "phpmetrics/phpmetrics": "*",
+        "sebastian/phpcpd": "*",
+        "codeception/codeception": "*"
     },
     "autoload-dev": {
         "psr-4": {
