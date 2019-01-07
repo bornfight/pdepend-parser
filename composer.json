@@ -1,5 +1,5 @@
 {
-    "name": "degordian/pdepend-parser",
+    "name": "bornfight/pdepend-parser",
     "description": "Parser for PDepend XML reports.",
     "type": "library",
     "authors": [
@@ -20,12 +20,12 @@
         ]
     },
     "require-dev": {
-        "phpmd/phpmd": "*.*.*",
-        "phpstan/phpstan": "*.*.*",
-        "friendsofphp/php-cs-fixer": "*.*.*",
-        "phpmetrics/phpmetrics": "*.*.*",
-        "sebastian/phpcpd": "*.*.*",
-        "codeception/codeception": "*.*.*"
+        "phpmd/phpmd": "*",
+        "phpstan/phpstan": "*",
+        "friendsofphp/php-cs-fixer": "*",
+        "phpmetrics/phpmetrics": "*",
+        "sebastian/phpcpd": "*",
+        "codeception/codeception": "*"
     },
     "autoload-dev": {
         "psr-4": {
