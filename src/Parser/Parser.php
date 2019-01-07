@@ -20,11 +20,11 @@ class Parser
 
     public function __construct(string $path)
     {
-        if (file_exists($path)) {
-            $this->file = file_get_contents($path);
-        } else {
+        if (!file_exists($path)) {
             throw new InvalidArgumentException($path . 'is not valid file path');
         }
+
+        $this->file = file_get_contents($path);
     }
 
     public function parse()
