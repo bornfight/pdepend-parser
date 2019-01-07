@@ -15,7 +15,7 @@ pipeline {
             post {
                 always {
                     publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'tests/_output', reportFiles: 'report.html,coverage/index.html', reportName: 'Codeception report', reportTitles: 'Test overview,Code coverage'])
-                    xunit testTimeMargin: '3000', thresholdMode: 1, thresholds: [failed(failureThreshold: '100', unstableThreshold: '0')], tools: [JUnit(deleteOutputFiles: false, failIfNotNew: false, pattern: 'tests/_output/report.xml', skipNoTestFiles: true, stopProcessingIfError: true)]
+                    junit 'tests/_output/report.xml'
                     step([
                         $class: 'CloverPublisher',
                         cloverReportDir: 'tests/_output/coverage',
