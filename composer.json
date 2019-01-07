@@ -1,0 +1,40 @@
+{
+    "name": "degordian/pdepend-parser",
+    "description": "Parser for PDepend XML reports.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "JosipTrbuscic",
+            "email": "josip.trbuscic@bornfight.com"
+        }
+    ],
+    "scripts": {
+        "ci:test": [
+            "mkdir -p reports",
+            "phpmd src xml phpmd.xml > reports/phpmd.xml || true",
+            "phpstan analyse -l 7 --no-progress --no-ansi --error-format=checkstyle  src > reports/phpstan-checkstyle.xml || true",
+            "php-cs-fixer fix --dry-run --diff --format=checkstyle --allow-risky=yes src > reports/php-csfixer-checkstyle.xml || true",
+            "phpmetrics src --report-html=reports/phpmetrics || true",
+            "phpcpd --log-pmd=reports/phpcpd.xml src || true",
+            "codecept run unit --coverage-html --coverage-xml --html --xml || true"
+        ]
+    },
+    "require-dev": {
+        "phpmd/phpmd": "*.*.*",
+        "phpstan/phpstan": "*.*.*",
+        "friendsofphp/php-cs-fixer": "*.*.*",
+        "phpmetrics/phpmetrics": "*.*.*",
+        "sebastian/phpcpd": "*.*.*",
+        "codeception/codeception": "*.*.*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bornfight\\PDependParser\\Tests\\": "tests/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Bornfight\\PDependParser\\": "src/"
+        }
+    }
+}

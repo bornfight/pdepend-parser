@@ -1,0 +1,10 @@
+.idea*
+/.php_cs.cache
+###> symfony/framework-bundle ###
+/.env
+/.env.local
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
