@@ -233,10 +233,6 @@ class ClassElement
      */
     public function addMethod(MethodElement $methodElement): void
     {
-        if (!$methodElement) {
-            throw new InvalidArgumentException('Method element cannot be null');
-        }
-
         $this->methodList[] = $methodElement;
     }
 
