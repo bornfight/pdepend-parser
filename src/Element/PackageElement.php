@@ -76,10 +76,6 @@ class PackageElement
 
     public function addClassElement(ClassElement $classElement): void
     {
-        if (!$classElement) {
-            throw new InvalidArgumentException('Class element cannot be null');
-        }
-
         $this->classList[] = $classElement;
     }
 
