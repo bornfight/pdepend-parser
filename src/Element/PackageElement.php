@@ -66,7 +66,7 @@ class PackageElement
     public function __construct(string $name)
     {
         if (!$name || '' === $name) {
-            throw new \InvalidArgumentException('Invalid package name');
+            throw new InvalidArgumentException('Invalid package name');
         }
 
         $this->name = $name;

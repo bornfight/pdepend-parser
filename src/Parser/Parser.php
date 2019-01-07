@@ -8,9 +8,9 @@
 
 namespace Bornfight\PDependParser\Parser;
 
-use App\Element\ClassElement;
-use App\Element\MethodElement;
-use App\Element\PackageElement;
+use Bornfight\PDependParser\Element\ClassElement;
+use Bornfight\PDependParser\Element\MethodElement;
+use Bornfight\PDependParser\Element\PackageElement;
 use InvalidArgumentException;
 use SimpleXMLElement;
 
@@ -20,11 +20,11 @@ class Parser
 
     public function __construct(string $path)
     {
-        if (file_exists($path)) {
-            $this->file = file_get_contents($path);
-        } else {
-            throw new InvalidArgumentException('Invalid file path');
+        if (!file_exists($path)) {
+            throw new InvalidArgumentException($path . 'is not valid file path');
         }
+
+        $this->file = file_get_contents($path);
     }
 
     public function parse()

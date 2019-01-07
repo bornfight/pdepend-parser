@@ -36,5 +36,8 @@
         "psr-4": {
             "Bornfight\\PDependParser\\": "src/"
         }
-    }
+    },
+  "require": {
+    "ext-simplexml": "*"
+  }
 }

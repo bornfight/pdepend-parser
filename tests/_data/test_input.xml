@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2019-01-02T14:08:05" pdepend="@package_version@" ahh="2" andc="0" calls="47" ccn="34" ccn2="34" cloc="1" clsa="0" clsc="2" eloc="197" fanout="11" leafs="0" lloc="125" loc="291" maxDIT="2" ncloc="290" noc="2" nof="0" noi="0" nom="14" nop="2" roots="2">
+  <files>
+    <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Command/Generator.php" loc="232" cloc="1" eloc="150" lloc="94" ncloc="231"/>
+    <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Kernel.php" loc="59" cloc="0" eloc="47" lloc="31" ncloc="59"/>
+  </files>
+  <package name="App\Command" noc="1" noi="0" nom="9" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Generator" fqname="App\Command\Generator" start="50" end="231" ca="0" cbo="7" ce="7" dit="2" noam="9" nocc="0" noom="0" nom="9" loc="182" cloc="1" eloc="120" lloc="82" ncloc="181" cr="0.15" rcr="0.2775" impl="0" cis="0" csz="10" npm="0" vars="1" varsi="1" varsnp="0" wmc="27" wmci="27" wmcnp="0">
+      <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Command/Generator.php"/>
+      <method name="execute" start="65" end="122" ccn="8" ccn2="8" loc="58" cloc="0" eloc="42" lloc="33" ncloc="58" npath="80" hnt="62" hnd="255" hv="495.64991308525" hd="9.8686440677966" hl="0.10133104336625" he="4891.3925744727" ht="271.74403191515" hb="0.096050675884362" hi="50.22472283732" mi="44.642823933781"/>
+      <method name="updateComposer" start="124" end="130" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="4" ncloc="7" npath="1" hnt="14" hnd="19" hv="59.47098518821" hd="6" hl="0.16666666666667" he="356.82591112926" ht="19.823661729403" hb="0.016769354056549" hi="9.9118308647017" mi="70.467225812846"/>
+      <method name="bootstrapCodeception" start="131" end="157" ccn="2" ccn2="2" loc="27" cloc="0" eloc="21" lloc="18" ncloc="27" npath="2" hnt="51" hnd="114" hv="348.4773907224" hd="6.5576923076923" hl="0.1524926686217" he="2285.207504545" ht="126.95597247472" hb="0.057831240257258" hi="53.140247265586" mi="53.08780998705"/>
+      <method name="isToolIncluded" start="159" end="164" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="3" ncloc="6" npath="1" hnt="20" hnd="29" hv="97.159619902551" hd="4.9230769230769" hl="0.203125" he="478.32428259718" ht="26.573571255399" hb="0.020387330553723" hi="19.735547792706" mi="70.701788783575"/>
+      <method name="prepareJson" start="166" end="181" ccn="4" ccn2="4" loc="16" cloc="0" eloc="12" lloc="7" ncloc="16" npath="8" hnt="15" hnd="51" hv="85.086380129572" hd="9.1666666666667" hl="0.10909090909091" he="779.95848452108" ht="43.331026917838" hb="0.02824401302634" hi="9.2821505595897" mi="62.40786198335"/>
+      <method name="compareCitestScript" start="183" end="199" ccn="4" ccn2="4" loc="17" cloc="1" eloc="13" lloc="8" ncloc="16" npath="6" hnt="28" hnd="46" hv="154.6597347696" hd="12.794117647059" hl="0.07816091954023" he="1978.7348419051" ht="109.92971343917" hb="0.052537630196046" hi="12.08834708544" mi="59.83241970702"/>
+      <method name="editJenkinsfile" start="201" end="207" ccn="2" ccn2="2" loc="7" cloc="0" eloc="6" lloc="1" ncloc="7" npath="2" hnt="17" hnd="22" hv="75.810337516834" hd="9.625" hl="0.1038961038961" he="729.67449859953" ht="40.537472144418" hb="0.027016651719267" hi="7.8763987030477" mi="69.594547576063"/>
+      <method name="clearEmptyBlocks" start="209" end="224" ccn="4" ccn2="4" loc="16" cloc="0" eloc="12" lloc="7" ncloc="16" npath="8" hnt="16" hnd="54" hv="92.078200034616" hd="7.0714285714286" hl="0.14141414141414" he="651.1244145305" ht="36.173578585028" hb="0.025041176649714" hi="13.021159600855" mi="62.167715525299"/>
+      <method name="clearJenkinsfilePlaceholders" start="226" end="229" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="10" hnd="11" hv="34.594316186373" hd="5.25" hl="0.19047619047619" he="181.62015997846" ht="10.090008887692" hb="0.010690256224877" hi="6.5893935593091" mi="78.681459685251"/>
+    </class>
+  </package>
+  <package name="App" noc="1" noi="0" nom="5" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Kernel" fqname="App\Kernel" start="12" end="58" ca="0" cbo="4" ce="4" dit="2" noam="5" nocc="0" noom="0" nom="5" loc="47" cloc="0" eloc="29" lloc="17" ncloc="47" cr="0.15" rcr="0.2775" impl="0" cis="3" csz="5" npm="3" vars="0" varsi="0" varsnp="0" wmc="7" wmci="7" wmcnp="5">
+      <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Kernel.php"/>
+      <method name="getCacheDir" start="18" end="21" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="9" hnd="10" hv="29.897352853986" hd="7" hl="0.14285714285714" he="209.2814699779" ht="11.626748332106" hb="0.011749857421146" hi="4.2710504077123" mi="79.125191356207"/>
+      <method name="getLogDir" start="23" end="26" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+      <method name="registerBundles" start="28" end="36" ccn="3" ccn2="3" loc="9" cloc="0" eloc="8" lloc="4" ncloc="9" npath="3" hnt="22" hnd="32" hv="110" hd="11.666666666667" hl="0.085714285714286" he="1283.3333333333" ht="71.296296296296" hb="0.039364529214655" hi="9.4285714285714" mi="65.602660305653"/>
+      <method name="configureContainer" start="38" end="48" ccn="1" ccn2="1" loc="11" cloc="0" eloc="9" lloc="7" ncloc="11" npath="1" hnt="26" hnd="70" hv="159.36135844057" hd="5.6551724137931" hl="0.17682926829268" he="901.2159580777" ht="50.067553226539" hb="0.031100305905431" hi="28.179752407174" mi="63.628570405128"/>
+      <method name="configureRoutes" start="50" end="57" ccn="1" ccn2="1" loc="8" cloc="0" eloc="6" lloc="4" ncloc="8" npath="1" hnt="19" hnd="49" hv="106.67948703819" hd="5.8" hl="0.17241379310345" he="618.7410248215" ht="34.374501378972" hb="0.024203863042803" hi="18.393015006584" mi="68.690284424501"/>
+    </class>
+  </package>
+</metrics>
