@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "08ce5c1edb4f45ee94a25370a795fec6",
+    "content-hash": "3f3cdc357a697ee698b2a98f62520d65",
     "packages": [],
     "packages-dev": [
         {
@@ -202,6 +202,44 @@
             "time": "2018-12-31T10:33:06+00:00"
         },
         {
+            "name": "codeception/specify",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Codeception/Specify.git",
+                "reference": "504ac7a882e6f7226b0cff44c72a6c0bbd0bad95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Codeception/Specify/zipball/504ac7a882e6f7226b0cff44c72a6c0bbd0bad95",
+                "reference": "504ac7a882e6f7226b0cff44c72a6c0bbd0bad95",
+                "shasum": ""
+            },
+            "require": {
+                "myclabs/deep-copy": "~1.1",
+                "php": ">=7.1.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Codeception\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Bodnarchuk",
+                    "email": "davert@codeception.com"
+                }
+            ],
+            "description": "BDD code blocks for PHPUnit and Codeception",
+            "time": "2018-03-12T23:55:10+00:00"
+        },
+        {
             "name": "codeception/stub",
             "version": "2.0.4",
             "source": {
@@ -230,6 +268,46 @@
             ],
             "description": "Flexible Stub wrapper for PHPUnit's Mock Builder",
             "time": "2018-07-26T11:55:37+00:00"
+        },
+        {
+            "name": "codeception/verify",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Codeception/Verify.git",
+                "reference": "f45b39025b3f5cfd9a9d8fb992432885ff5380c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Codeception/Verify/zipball/f45b39025b3f5cfd9a9d8fb992432885ff5380c1",
+                "reference": "f45b39025b3f5cfd9a9d8fb992432885ff5380c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.0",
+                "phpunit/phpunit": "> 6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Codeception/function.php"
+                ],
+                "psr-4": {
+                    "Codeception\\": "src\\Codeception"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Bodnarchuk",
+                    "email": "davert@codeception.com"
+                }
+            ],
+            "description": "BDD assertion library for PHPUnit",
+            "time": "2017-11-12T01:51:59+00:00"
         },
         {
             "name": "composer/semver",
