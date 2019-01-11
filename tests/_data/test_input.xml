@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2019-01-02T14:08:05" pdepend="@package_version@" ahh="1" andc="2" calls="3" ccn="4" ccn2="5" cloc="6" clsa="7" clsc="8" eloc="9" fanout="10" leafs="11" lloc="12" loc="13" maxDIT="14" ncloc="15" noc="16" nof="17" noi="18" nom="19" nop="20" roots="21">
+<metrics generated="2019-01-0214:08:05" pdepend="@package_version@" ahh="1" andc="2" calls="3" ccn="4" ccn2="5" cloc="6" clsa="7" clsc="8" eloc="9" fanout="10" leafs="11" lloc="12" loc="13" maxDIT="14" ncloc="15" noc="16" nof="17" noi="18" nom="19" nop="20" roots="21">
   <files>
     <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Command/Generator.php" loc="232" cloc="1" eloc="150" lloc="94" ncloc="231"/>
     <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Kernel.php" loc="59" cloc="0" eloc="47" lloc="31" ncloc="59"/>

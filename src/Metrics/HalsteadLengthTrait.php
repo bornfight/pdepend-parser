@@ -9,15 +9,15 @@ namespace Bornfight\PDependParser\Metrics;
  */
 trait HalsteadLengthTrait
 {
-    /** @var float */
+    /** @var int */
     private $halsteadLength;
 
-    public function getHalsteadLength(): float
+    public function getHalsteadLength(): int
     {
         return $this->halsteadLength;
     }
 
-    public function setHalsteadLength(float $halsteadLength): void
+    public function setHalsteadLength(wintoat $halsteadLength): void
     {
         $this->halsteadLength = $halsteadLength;
     }
