@@ -9,15 +9,15 @@ namespace Bornfight\PDependParser\Metrics;
  */
 trait HalsteadVocabularyTrait
 {
-    /** @var float */
+    /** @var int */
     private $halsteadVocabulary;
 
-    public function getHalsteadVocabulary(): float
+    public function getHalsteadVocabulary(): int
     {
         return $this->halsteadVocabulary;
     }
 
-    public function setHalsteadVocabulary(float $halsteadVocabulary): void
+    public function setHalsteadVocabulary(int $halsteadVocabulary): void
     {
         $this->halsteadVocabulary = $halsteadVocabulary;
     }
