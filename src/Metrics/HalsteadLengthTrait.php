@@ -17,7 +17,7 @@ trait HalsteadLengthTrait
         return $this->halsteadLength;
     }
 
-    public function setHalsteadLength(wintoat $halsteadLength): void
+    public function setHalsteadLength(int $halsteadLength): void
     {
         $this->halsteadLength = $halsteadLength;
     }
