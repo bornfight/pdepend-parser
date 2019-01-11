@@ -40,7 +40,7 @@ class Parser
         $result->setGenerated($attributes['generated']);
         $result->setPdepend($attributes['pdepend']);
         $result->setAverageHierarchyHeight((float)$attributes['ahh']);
-        $result->setAverageNumberOfDerivedClasses((float)$attributes['avdc']);
+        $result->setAverageNumberOfDerivedClasses((float)$attributes['andc']);
         $result->setNumberOfMethodOrFunctionCalls((int)$attributes['calls']);
         $result->setCyclomaticComplexityNumber((int)$attributes['ccn']);
         $result->setExtendedCyclomaticComplexityNumber((int)$attributes['ccn2']);

@@ -41,11 +41,11 @@ class ParserTest extends \Codeception\Test\Unit
 
                 expect('attribute: generated', $metric->getGenerated())->equals('2019-01-02T14:08:05');
                 expect('attribute: pdepend', $metric->getGenerated())->equals('2019-01-02T14:08:05');
-                expect('metric: ahh', $metric->getAverageHierarchyHeight())->equals(2);
-                expect('metric: andc', $metric->getAverageNumberOfDerivedClasses())->equals(0);
-                expect('metric: calls', $metric->getNumberOfMethodOrFunctionCalls())->equals(47);
-                expect('metric: ccn', $metric->getCyclomaticComplexityNumber())->equals(34);
-                expect('metric: ccn2', $metric->getExtendedCyclomaticComplexityNumber())->equals(34);
+                expect('metric: ahh', $metric->getAverageHierarchyHeight())->equals(1);
+                expect('metric: andc', $metric->getAverageNumberOfDerivedClasses())->equals(2);
+                expect('metric: calls', $metric->getNumberOfMethodOrFunctionCalls())->equals(3);
+                expect('metric: ccn', $metric->getCyclomaticComplexityNumber())->equals(4);
+                expect('metric: ccn2', $metric->getExtendedCyclomaticComplexityNumber())->equals(5);
             });
 
             $this->it('should parse Package Element', function () {
