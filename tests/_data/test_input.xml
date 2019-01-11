@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2019-01-02T14:08:05" pdepend="@package_version@" ahh="2" andc="0" calls="47" ccn="34" ccn2="34" cloc="1" clsa="0" clsc="2" eloc="197" fanout="11" leafs="0" lloc="125" loc="291" maxDIT="2" ncloc="290" noc="2" nof="0" noi="0" nom="14" nop="2" roots="2">
+<metrics generated="2019-01-02T14:08:05" pdepend="@package_version@" ahh="1" andc="2" calls="3" ccn="4" ccn2="5" cloc="6" clsa="7" clsc="8" eloc="9" fanout="10" leafs="11" lloc="12" loc="13" maxDIT="14" ncloc="15" noc="16" nof="17" noi="18" nom="19" nop="20" roots="21">
   <files>
     <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Command/Generator.php" loc="232" cloc="1" eloc="150" lloc="94" ncloc="231"/>
     <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Kernel.php" loc="59" cloc="0" eloc="47" lloc="31" ncloc="59"/>
   </files>
-  <package name="App\Command" noc="1" noi="0" nom="9" nof="0" cr="0.15" rcr="0.2775">
+  <package name="App\Command" noc="1" noi="2" nom="3" nof="4" cr="5.5" rcr="6.6">
     <class name="Generator" fqname="App\Command\Generator" start="50" end="231" ca="0" cbo="7" ce="7" dit="2" noam="9" nocc="0" noom="0" nom="9" loc="182" cloc="1" eloc="120" lloc="82" ncloc="181" cr="0.15" rcr="0.2775" impl="0" cis="0" csz="10" npm="0" vars="1" varsi="1" varsnp="0" wmc="27" wmci="27" wmcnp="0">
       <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Command/Generator.php"/>
       <method name="execute" start="65" end="122" ccn="8" ccn2="8" loc="58" cloc="0" eloc="42" lloc="33" ncloc="58" npath="80" hnt="62" hnd="255" hv="495.64991308525" hd="9.8686440677966" hl="0.10133104336625" he="4891.3925744727" ht="271.74403191515" hb="0.096050675884362" hi="50.22472283732" mi="44.642823933781"/>
@@ -18,7 +18,7 @@
       <method name="clearJenkinsfilePlaceholders" start="226" end="229" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="10" hnd="11" hv="34.594316186373" hd="5.25" hl="0.19047619047619" he="181.62015997846" ht="10.090008887692" hb="0.010690256224877" hi="6.5893935593091" mi="78.681459685251"/>
     </class>
   </package>
-  <package name="App" noc="1" noi="0" nom="5" nof="0" cr="0.15" rcr="0.2775">
+  <package name="App" noc="7" noi="8" nom="9" nof="10" cr="11.11" rcr="12.12">
     <class name="Kernel" fqname="App\Kernel" start="12" end="58" ca="0" cbo="4" ce="4" dit="2" noam="5" nocc="0" noom="0" nom="5" loc="47" cloc="0" eloc="29" lloc="17" ncloc="47" cr="0.15" rcr="0.2775" impl="0" cis="3" csz="5" npm="3" vars="0" varsi="0" varsnp="0" wmc="7" wmci="7" wmcnp="5">
       <file name="/Users/josip/PhpstormProjects/ci-script-generator/src/Kernel.php"/>
       <method name="getCacheDir" start="18" end="21" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="9" hnd="10" hv="29.897352853986" hd="7" hl="0.14285714285714" he="209.2814699779" ht="11.626748332106" hb="0.011749857421146" hi="4.2710504077123" mi="79.125191356207"/>

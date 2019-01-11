@@ -25,7 +25,9 @@
         "friendsofphp/php-cs-fixer": "*",
         "phpmetrics/phpmetrics": "*",
         "sebastian/phpcpd": "*",
-        "codeception/codeception": "*"
+        "codeception/codeception": "*",
+        "codeception/specify": "^1.1",
+        "codeception/verify": "^1.0"
     },
     "autoload-dev": {
         "psr-4": {

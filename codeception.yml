@@ -8,6 +8,4 @@ paths:
 actor_suffix: Tester
 extensions:
   enabled:
-  - Codeception\Extension\RunFailed
-settings:
-  strict_xml: "true"
+    - Codeception\Extension\RunFailed
