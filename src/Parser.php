@@ -44,6 +44,15 @@ class Parser
         $result->setNumberOfMethodOrFunctionCalls((int)$attributes['calls']);
         $result->setCyclomaticComplexityNumber((int)$attributes['ccn']);
         $result->setExtendedCyclomaticComplexityNumber((int)$attributes['ccn2']);
+        $result->setNonCommentLinesOfCode((int)$attributes['ncloc']);
+        $result->setCommentLinesOfCode((int)$attributes['cloc']);
+        $result->setNumberOfAbstractClasses((int)$attributes['clsa']);
+        $result->setNumberOfConcreteClasses((int)$attributes['clsc']);
+        $result->setExecutableLinesOfCode((int)$attributes['eloc']);
+        $result->setNumberOfFanouts((int)$attributes['fanout']);
+        $result->setNumberOfLeafClasses((int)$attributes['leafs']);
+        $result->setLogicalLinesOfCode((int)$attributes['lloc']);
+        $result->setLinesOfCode((int)$attributes['maxDIT']);
 
         foreach ($xmlMetricElement->package as $packageElement) {
             $packageMetricCollection = $this->parsePackage($packageElement);
