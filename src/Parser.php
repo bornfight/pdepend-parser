@@ -52,7 +52,8 @@ class Parser
         $result->setNumberOfFanouts((int)$attributes['fanout']);
         $result->setNumberOfLeafClasses((int)$attributes['leafs']);
         $result->setLogicalLinesOfCode((int)$attributes['lloc']);
-        $result->setLinesOfCode((int)$attributes['maxDIT']);
+        $result->setLinesOfCode((int)$attributes['loc']);
+        $result->setMaxDepthOfInheritanceTree((int)$attributes['maxDIT']);
 
         foreach ($xmlMetricElement->package as $packageElement) {
             $packageMetricCollection = $this->parsePackage($packageElement);
