@@ -9,15 +9,15 @@ namespace Bornfight\PDependParser\Metrics;
  */
 trait NPathComplexityTrait
 {
-    private $NPathComplexity;
+    private $nPathComplexity;
 
     public function getNPathComplexity(): int
     {
-        return $this->NPathComplexity;
+        return $this->nPathComplexity;
     }
 
-    public function setNPathComplexity(int $NPathComplexity): void
+    public function setNPathComplexity(int $nPathComplexity): void
     {
-        $this->NPathComplexity = $NPathComplexity;
+        $this->nPathComplexity = $nPathComplexity;
     }
 }

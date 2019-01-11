@@ -23,9 +23,6 @@ class Parser
             throw new InvalidArgumentException('Unable to read data from ' . $filename);
         }
 
-        /**
-         * @var SimpleXMLElement
-         */
         $xml = simplexml_load_string($fileContents);
 
         if ($xml === false) {
@@ -43,10 +40,10 @@ class Parser
         $result->setGenerated($attributes['generated']);
         $result->setPdepend($attributes['pdepend']);
         $result->setAverageHierarchyHeight((float)$attributes['ahh']);
-        $result->setAverageNumberOfDerivedClasses((float)$attributes['avdc']);
-        $result->setNumberOfMethodOrFunctionCalls((float)$attributes['calls']);
-        $result->setCyclomaticComplexityNumber((float)$attributes['ccn']);
-        $result->setExtendedCyclomaticComplexityNumber((float)$attributes['ccn2']);
+        $result->setAverageNumberOfDerivedClasses((float)$attributes['andc']);
+        $result->setNumberOfMethodOrFunctionCalls((int)$attributes['calls']);
+        $result->setCyclomaticComplexityNumber((int)$attributes['ccn']);
+        $result->setExtendedCyclomaticComplexityNumber((int)$attributes['ccn2']);
 
         foreach ($xmlMetricElement->package as $packageElement) {
             $packageMetricCollection = $this->parsePackage($packageElement);
@@ -72,7 +69,7 @@ class Parser
 
         foreach ($packageElement->classes as $classElement) {
             $classMetricCollection = $this->parseClass($classElement);
-            $packageElement->add($classMetricCollection);
+            $result->addClassElement($classMetricCollection);
         }
 
         return $result;
@@ -122,8 +119,9 @@ class Parser
     private function parseMethod(SimpleXMLElement $method): MethodMetricsCollection
     {
         $attributes = $method->attributes();
-        $methodElement = new MethodMetricsCollection($attributes['name']);
+        $methodElement = new MethodMetricsCollection();
 
+        $methodElement->setName($attributes['name']);
         $methodElement->setStart((int)$attributes['start']);
         $methodElement->setEnd((int)$attributes['end']);
         $methodElement->setCyclomaticComplexityNumber((int)$attributes['ccn']);
