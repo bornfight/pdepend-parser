@@ -77,7 +77,7 @@ class Parser
         $result->setCodeRank((float)$attributes['cr']);
         $result->setReverseCodeRank((float)$attributes['rcr']);
 
-        foreach ($packageElement->classes as $classElement) {
+        foreach ($packageElement->class as $classElement) {
             $classMetricCollection = $this->parseClass($classElement);
             $result->addClassElement($classMetricCollection);
         }
@@ -90,6 +90,7 @@ class Parser
         $attributes = $class->attributes();
         $classElement = new ClassMetricsCollection();
 
+        $classElement->setFqName($attributes['fqname']);
         $classElement->setName($attributes['name']);
         $classElement->setStart((int)$attributes['start']);
         $classElement->setEnd((int)$attributes['end']);

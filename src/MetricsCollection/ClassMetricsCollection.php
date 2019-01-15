@@ -135,6 +135,14 @@ class ClassMetricsCollection
     }
 
     /**
+     * @param string $fqName
+     */
+    public function setFqName(string $fqName): void
+    {
+        $this->fqName = $fqName;
+    }
+
+    /**
      * @return int
      */
     public function getStart(): int
